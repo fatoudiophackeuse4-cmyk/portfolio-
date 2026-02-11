@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E9C98D; /* nouveau fond beige */
+}
+
+/* SECTION TITRE */
+.galerie-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.galerie-section h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.galerie-section p {
+    color: #3F2C1D;
+    margin-bottom: 60px;
+}
+
+/* GRILLE 3 IMAGES PAR LIGNE */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD IMAGE */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+/* IMAGE PLUS GRANDE */
+.card img {
+    width: 100%;
+    height: 450px;       /* augmente la hauteur pour mieux afficher l’affiche */
+    object-fit: cover;   /* garde les proportions sans déformer l’image */
+    display: block;
+}
+
+/* HOVER ANIMATION */
+.card:hover {
+    transform: scale(1.05);
+}
